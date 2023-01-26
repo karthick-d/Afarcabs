@@ -1,0 +1,61 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tool_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newtheme_2"
+    android:paddingStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:contentDescription="dummy image"
+            android:focusable="true"
+            android:src="@drawable/user"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/logouticon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:contentDescription="dummy image"
+            android:focusable="true"
+            android:src="@drawable/logout"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                android:textColor="@color/white"
+                app:fontFamily="@font/dmsans_regular" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

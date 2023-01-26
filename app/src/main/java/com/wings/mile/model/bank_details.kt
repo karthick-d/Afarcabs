@@ -1,0 +1,19 @@
+data class bank_details(
+    val address: String,
+    val bank: String,
+    val bankcode: String,
+    val branch: String,
+    val centre: String,
+    val city: String,
+    val contact: String,
+    val district: String,
+    val ifsc: String,
+    val imps: String,
+    val isO3166: String,
+    val micr: String,
+    val neft: String,
+    val rtgs: String,
+    val state: String,
+    val swift: String,
+    val upi: String
+)

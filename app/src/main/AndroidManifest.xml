@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wings.mile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:name=".firebase.BaseApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/afar"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/afar_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:allowBackup"
+        tools:targetApi="30">
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".activity.SignupActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.TerminateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.OtpActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".socialintegration.Sigin"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity android:name=".socialintegration.ProfileActivity"
+            android:screenOrientation="portrait"/>
+<!--        <activity android:name=".mapbox.MapsActivity"-->
+<!--            android:screenOrientation="portrait"/>-->
+<!--        <activity-->
+<!--            android:name=".mapbox.LocationTrackerActivity"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:exported="true"></activity>-->
+        <activity android:name=".activity.Verifyphone"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".firebase.AuthActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".activity.Profile"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.UserActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.PDFActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB4P__PDmWwlnyfUysMj3Ah9KBWIz1uS1w" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.wings.mile.driver.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service android:name=".service.FirebaseMessageReciever"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.RegistrationIntentService"
+            android:exported="false" />
+
+        <activity android:name="com.wings.mile.Driver.DriverChooseTypeActivity" />
+        <activity android:name="com.wings.mile.Payment.PaymentActivity" />
+        <activity android:name="com.wings.mile.Payment.PayoutActivity" />
+<!--        <activity android:name="com.wings.mile.Payment.AddPaymentActivity" />-->
+        <activity android:name="com.wings.mile.Login.DetailsActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.wings.mile.Login.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.wings.mile.Login.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wings.mile.Customer.CustomerMapActivity"
+            android:screenOrientation="portrait"   android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.wings.mile.Customer.CustomerSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wings.mile.Driver.DriverSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wings.mile.History.HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wings.mile.History.HistorySingleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wings.mile.Driver.DriverMapActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity android:name=".activity.DriverPermissionActivity" />
+        <activity android:name=".activity.DriverRegisterActivity" />
+        <activity android:name=".activity.DriverLoginActivity" />
+        <activity android:name=".Payment.PaymentRazorActivity" />
+        <activity android:name=".Payment.PaymentAccountActivity" />
+        <activity android:name=".location.MainActivity" />
+        <activity android:name=".location.MapActivity" />
+
+        <service android:name="com.wings.mile.Utils.onAppKilled" />
+    </application>
+
+</manifest>

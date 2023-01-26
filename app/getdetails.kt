@@ -1,0 +1,1 @@
+class getdetails : ArrayList<getdetailsItem>()

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_on_primary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/toolbar_layout"
+                layout="@layout/toolbarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:orientation="vertical"
+
+            app:layout_constraintTop_toBottomOf="@id/app">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Pilot's Details"
+                android:visibility="gone"
+                    android:textColor="@color/labelrecyclerview"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="start"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:padding="10dp"
+                    android:text="Overall Rating"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:textColor="@color/labelrecyclerview"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/simpleRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:rating="2.5"
+                    android:outlineAmbientShadowColor="@color/newtheme_2"
+                    android:shadowColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/good" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="130"
+                        android:textColor="@color/labelrecyclerview"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/sad"
+                        app:layout_constraintTop_toBottomOf="@+id/etDescription"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textColor="@color/gray"                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/add_commodity_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="200dp" />
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:text="Download Customer Reviews"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/labelrecyclerview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/reviewimage"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/cloud_computing"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@+id/guideline_right"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/commodity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Download Driver's Trip History"
+                    android:textSize="@dimen/font_16sp"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:textColor="@color/labelrecyclerview"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/review" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/commoditygroupvalue"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/cloud_computing"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_right"
+                    app:layout_constraintTop_toBottomOf="@+id/reviewimage" />
+
+                <TextView
+                    android:id="@+id/commodityname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:text="Download Driver's proofs"
+                    android:textSize="@dimen/font_16sp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/labelrecyclerview"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/commodity" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/commoditynamevalue"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/cloud_computing"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_right"
+                    app:layout_constraintTop_toBottomOf="@id/commoditygroupvalue" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="start"
+                android:orientation="horizontal"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/terminate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/terminate_border_theme"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Terminate driver"
+                    android:textAllCaps="false"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/etDescription"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

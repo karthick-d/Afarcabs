@@ -1,0 +1,204 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'androidx.navigation.safeargs'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
+}
+
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.wings.mile.driver"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+            debug {
+                //Dev
+                buildConfigField "String", "SERVER_URL", '"https://adidaas-ds-dev.azurewebsites.net"'
+                buildConfigField "String", "BASE_URL",'"https://adidaasbsdev.blob.core.windows.net/"'
+                buildConfigField "String", "REGISTER_URL",'"https://adidaas-useradm-dev.azurewebsites.net/Registration/Register"'
+                buildConfigField "String", "SHAS_TOCKEN",'"sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2022-11-25T13:30:51Z&st=2020-11-25T05:30:51Z&spr=https&sig=TRJxLVm8%2FXZ0RL%2FwNQdZe2qw82K12n%2FNlmGEmFcVqvs%3D"'
+                buildConfigField "String", "HubName", '"adidaas-nhub-dev"'
+                buildConfigField "String", "HubListenConnectionString", '"Endpoint=sb://adidaas-nhub-ns-dev.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=ITL79ClQB32saVHHqvGB1uUEoFqI47a4U+5O7bhBYuQ="'
+                buildConfigField "String", "Auth_token",  '"Basic YWRpZGFhczpEaXN5c0AzMjE="'
+                buildConfigField "String", "BING_MAP_KEY",'"As81PP4zbrzUqnAkQGQgqc_Q_FCv17xl75aSXUECHIv5lsCPSEUReGpNnZ8JPHTL"'
+                buildConfigField "String", "BAU_WEB" ,'"https://bausabour.ac.in/"'
+                signingConfig signingConfigs.debug
+
+//            buildConfigField "String", "SERVER_URL", '"https://adidaas-ds-qa.azurewebsites.net/"'
+//            buildConfigField "String", "BASE_URL", '"https://adidaasbsqa.blob.core.windows.net/"'
+//            buildConfigField "String", "REGISTER_URL",'"https://adidaas-useradm-dev.azurewebsites.net/Registration/Register"'
+//            buildConfigField "String", "SHAS_TOCKEN", '"sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2023-01-04T20:48:47Z&st=2021-01-04T12:48:47Z&spr=https&sig=d9EuVs4cSFTA0APaHSzAhAJUVNqaZ2n1vUPja1cexhs%3D"'
+//            buildConfigField "String", "HubName", '"adidaas-nhub-qa"'
+//            buildConfigField "String", "HubListenConnectionString", '"Endpoint=sb://adidaas-nhub-ns-qa.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0j0RaLb6MtxybO9OVw8RJHLN1iVM9eTOhPbqZnWRjRc="'
+//            buildConfigField "String", "Auth_token", '"Basic YWRpZGFhczpEaXN5c0AzMjE="'
+//            buildConfigField "String", "BING_MAP_KEY",'"As81PP4zbrzUqnAkQGQgqc_Q_FCv17xl75aSXUECHIv5lsCPSEUReGpNnZ8JPHTL"'
+//            buildConfigField "String", "BAU_WEB" ,'"https://bausabour.ac.in/"'
+//            signingConfig signingConfigs.debug
+            }
+            //use to release for testing
+            release {
+                debuggable true
+                useProguard true
+                minifyEnabled true
+                shrinkResources true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+                //Dev
+                buildConfigField "String", "SERVER_URL", '"https://adidaas-ds-dev.azurewebsites.net"'
+                buildConfigField "String", "BASE_URL",'"https://adidaasbsdev.blob.core.windows.net/"'
+                buildConfigField "String", "REGISTER_URL",'"https://adidaas-useradm-dev.azurewebsites.net/Registration/Register"'
+                buildConfigField "String", "SHAS_TOCKEN",'"sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2022-11-25T13:30:51Z&st=2020-11-25T05:30:51Z&spr=https&sig=TRJxLVm8%2FXZ0RL%2FwNQdZe2qw82K12n%2FNlmGEmFcVqvs%3D"'
+                buildConfigField "String", "HubName", '"adidaas-nhub-dev"'
+                buildConfigField "String", "HubListenConnectionString", '"Endpoint=sb://adidaas-nhub-ns-dev.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=ITL79ClQB32saVHHqvGB1uUEoFqI47a4U+5O7bhBYuQ="'
+                buildConfigField "String", "Auth_token",  '"Basic YWRpZGFhczpEaXN5c0AzMjE="'
+                buildConfigField "String", "BING_MAP_KEY",'"As81PP4zbrzUqnAkQGQgqc_Q_FCv17xl75aSXUECHIv5lsCPSEUReGpNnZ8JPHTL"'
+                buildConfigField "String", "BAU_WEB" ,'"https://bausabour.ac.in/"'
+
+
+
+            }
+            production {
+                debuggable false
+                useProguard true
+                minifyEnabled true
+                shrinkResources true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+                buildConfigField "String", "SERVER_URL", '"https://adidaas-ds.azurewebsites.net"'
+                buildConfigField "String", "BASE_URL", '"https://adidaasbs.blob.core.windows.net/"'
+                buildConfigField "String", "REGISTER_URL",'"https://adidaas-useradm.azurewebsites.net/Registration/Register"'
+                buildConfigField "String", "SHAS_TOCKEN", '"sv=2019-12-12&ss=bfqt&srt=sco&sp=rwdlacupx&se=2023-01-04T20:48:47Z&st=2021-01-04T12:48:47Z&spr=https&sig=d9EuVs4cSFTA0APaHSzAhAJUVNqaZ2n1vUPja1cexhs%3D"'
+                buildConfigField "String", "HubName", '"adidaas-nhub"'
+                buildConfigField "String", "HubListenConnectionString", '"Endpoint=sb://adidaas-nhub-ns.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=jDfPp+oD4XFl3aSMnoLHM0X3wqAfZBLk0l0ph9ivt60="'
+                buildConfigField "String", "Auth_token", '"Basic YWRpZGFhczpEaXN5c0AzMjE="'
+                buildConfigField "String", "BING_MAP_KEY",'"As81PP4zbrzUqnAkQGQgqc_Q_FCv17xl75aSXUECHIv5lsCPSEUReGpNnZ8JPHTL"'
+                buildConfigField "String", "BAU_WEB" ,'"https://bausabour.ac.in/"'
+
+            }
+
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+
+}
+
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.2'
+    implementation 'com.google.android.gms:play-services-location:21.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.squareup.retrofit2:converter-jaxb:2.9.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    //Retrofit
+
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.2'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation "androidx.room:room-runtime:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    kapt "androidx.lifecycle:lifecycle-common-java8:2.5.1"
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //LifeCycle
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'com.github.welcome2c:LottieProgressDialog:1.0.1'
+    implementation 'com.github.chnouman:AwesomeDialog:1.0.5'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.github.ShrinathRaje:Preffy:2.0.0'
+    implementation 'com.chaos.view:pinview:1.4.4'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
+    implementation 'com.razorpay:checkout:1.6.26'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.15'
+    implementation platform('com.google.firebase:firebase-bom:31.0.1')
+
+
+
+    implementation 'com.google.dagger:dagger-android:2.35.1'
+    implementation 'com.google.dagger:dagger-android-support:2.35.1'
+    kapt "com.google.dagger:dagger-compiler:2.35.1"
+    kapt "com.google.dagger:dagger-android-processor:2.35.1"
+
+
+    implementation 'com.akexorcist:googledirectionlibrary:1.1.1'
+
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+
+    implementation "com.github.addisonelliott:SegmentedButton:3.1.5"
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.firebase:geofire-android:3.0.0'
+
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    implementation 'com.github.rtchagas:pingplacepicker:1.1.2'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    implementation "com.yuyakaido.android:card-stack-view:2.3.4"
+    implementation 'com.lorentzos.swipecards:library:1.0.9'
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+    implementation 'com.github.tintinscorpion:Dual-color-Polyline-Animation:1.0'
+    implementation 'com.ncorti:slidetoact:0.7.0'
+
+    implementation 'com.shreyaspatil:MaterialDialog:2.1'
+
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.15'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+}

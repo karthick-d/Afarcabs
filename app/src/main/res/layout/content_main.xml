@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:ignore="MissingClass,MissingConstraints">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_1" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_on_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            layout="@layout/toolbarlayout"
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar_layout"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobilenumber_edittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Email-ID"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        android:textColorHint="@color/labelrecyclerview"
+        app:fontFamily="@font/dmsans_regular"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/guideline_center"
+        app:boxStrokeColor="@color/newtheme_2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/number_edit"
+            android:inputType="text"
+            android:maxLength="50"
+            app:fontFamily="@font/dmsans_regular"
+
+            android:drawableEnd="@drawable/ic_baseline_phone_24"
+            android:textColor="@color/labelrecyclerview"
+
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordword_dittext"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Password"
+        android:layout_margin="30dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        android:textColorHint="@color/labelrecyclerview"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/labelrecyclerview"
+        app:boxStrokeColor="@color/newtheme_2"
+        app:fontFamily="@font/dmsans_regular"
+
+        app:layout_constraintRight_toRightOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/mobilenumber_edittext">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/password_edit"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            app:fontFamily="@font/dmsans_regular"
+
+            android:textColor="@color/labelrecyclerview"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/newlogo"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_border_theme"        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="signup"
+        app:fontFamily="@font/dmsans_regular"
+
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center1"
+        app:layout_constraintStart_toStartOf="@id/guideline_center1"
+        app:layout_constraintTop_toBottomOf="@+id/signup_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginwithotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_border_theme"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Login with OTP"
+
+        app:fontFamily="@font/dmsans_regular"
+
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center1"
+        app:layout_constraintStart_toStartOf="@id/guideline_center1"
+        app:layout_constraintTop_toBottomOf="@+id/signup" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_border_theme"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:fontFamily="@font/dmsans_regular"
+
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/guideline_center1"
+        app:layout_constraintTop_toBottomOf="@+id/passwordword_dittext"
+        app:layout_constraintEnd_toEndOf="@id/guideline_center1"
+        app:tint="?android:attr/textColorPrimaryInverse"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Are you a new user? Please Signup!"
+        android:textColor="#000000"
+        android:id="@+id/signup_text"
+        app:fontFamily="@font/dmsans_regular"
+
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+        app:layout_constraintRight_toRightOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="@string/hyperlink"
+        android:textColorLink="@color/newtheme_2"
+        android:textColor="@color/newtheme_2"
+        android:id="@+id/forgetpassword"
+        app:fontFamily="@font/dmsans_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+        app:layout_constraintRight_toRightOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/loginwithotp"
+
+        />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/Login_avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:indicatorColor="#4897E0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:indicatorName="LineScalePulseOutIndicator" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/white">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_lefts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04136253" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_rights"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/guideline_lefts"
+                    app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="@string/vehicle_type"
+                        android:textColorHint="@color/labelrecyclerview"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxStrokeColor="@color/newtheme_2"
+                        app:endIconTint="@color/labelrecyclerview"
+
+                        app:fontFamily="@font/dmsans_regular">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/vehileSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="@color/labelrecyclerview"
+
+                            app:fontFamily="@font/dmsans_regular"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/plate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintStart_toEndOf="@id/guideline_lefts">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/vehicle_registration_number"
+                            android:textColorHint="@color/labelrecyclerview"
+                            app:boxCornerRadiusBottomEnd="16dp"
+                            app:boxCornerRadiusBottomStart="16dp"
+                            app:boxCornerRadiusTopEnd="16dp"
+                            app:boxCornerRadiusTopStart="16dp"
+                            app:boxStrokeColor="@color/newtheme_2"
+
+                            app:fontFamily="@font/dmsans_regular">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/platenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_baseline_confirmation_number_24"
+                                android:imeOptions="actionNext"
+                                android:maxLength="10"
+                                android:textColor="@color/labelrecyclerview"
+
+                                app:fontFamily="@font/dmsans_regular" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_license_plate"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:saveEnabled="true"
+                            android:src="@drawable/ic_menu_camera"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/imagenameplate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:gravity="center"
+                        android:linksClickable="true"
+                        android:textColor="@color/newtheme_2"
+                        android:textColorLink="@color/newtheme_2"
+                        android:visibility="gone"
+                        app:fontFamily="@font/dmsans_regular"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@id/guideline_lefts"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintTop_toBottomOf="@+id/plate"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintStart_toEndOf="@id/guideline_lefts">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/insurance_number"
+                            android:textColorHint="@color/labelrecyclerview"
+                            app:boxCornerRadiusBottomEnd="16dp"
+                            app:boxCornerRadiusBottomStart="16dp"
+                            app:boxCornerRadiusTopEnd="16dp"
+                            app:boxCornerRadiusTopStart="16dp"
+                            app:boxStrokeColor="@color/newtheme_2"
+
+                            app:fontFamily="@font/dmsans_regular">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/insurancenumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_baseline_confirmation_number_24"
+                                android:imeOptions="actionNext"
+                                android:maxLength="20"
+                                android:textColor="@color/labelrecyclerview"
+
+                                app:fontFamily="@font/dmsans_regular" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_insurance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:saveEnabled="true"
+                            android:src="@drawable/ic_menu_camera"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/imagenameinsurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:gravity="center"
+                        android:linksClickable="true"
+
+                        android:textColor="@color/newtheme_2"
+                        android:textColorLink="@color/newtheme_2"
+                        android:visibility="gone"
+                        app:fontFamily="@font/dmsans_regular"
+                        app:layout_constraintLeft_toLeftOf="@id/guideline_lefts"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintTop_toBottomOf="@+id/signup"
+
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="@string/insurance_expiry_date"
+                        android:textColorHint="@color/labelrecyclerview"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxStrokeColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/insurance_expirytext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:textColor="@color/labelrecyclerview"
+
+                            app:fontFamily="@font/dmsans_regular"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintStart_toEndOf="@id/guideline_lefts">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/driver_license_number"
+                            android:textColorHint="@color/labelrecyclerview"
+                            app:boxCornerRadiusBottomEnd="16dp"
+                            app:boxCornerRadiusBottomStart="16dp"
+                            app:boxCornerRadiusTopEnd="16dp"
+                            app:boxCornerRadiusTopStart="16dp"
+                            app:boxStrokeColor="@color/newtheme_2"
+                            app:fontFamily="@font/dmsans_regular">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/driverlicenseEdittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_baseline_confirmation_number_24"
+                                android:imeOptions="actionNext"
+                                android:maxLength="16"
+                                android:textColor="@color/labelrecyclerview"
+
+                                app:fontFamily="@font/dmsans_regular" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_driver_license"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:saveEnabled="true"
+                            android:src="@drawable/ic_menu_camera"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/imagenamelicense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:gravity="center"
+                        android:linksClickable="true"
+                        android:textColor="@color/newtheme_2"
+                        android:textColorLink="@color/newtheme_2"
+                        android:visibility="gone"
+                        app:fontFamily="@font/dmsans_regular"
+
+                        app:layout_constraintLeft_toLeftOf="@id/guideline_lefts"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintTop_toBottomOf="@+id/license"
+
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="@string/license_expiry_date"
+                        android:textColorHint="@color/labelrecyclerview"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxStrokeColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/license_expirydate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:textColor="@color/labelrecyclerview"
+
+                            app:fontFamily="@font/dmsans_regular"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/aadhar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintStart_toEndOf="@id/guideline_lefts">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/aadhar_number"
+                            android:textColorHint="@color/labelrecyclerview"
+                            app:boxCornerRadiusBottomEnd="16dp"
+
+                            app:boxCornerRadiusBottomStart="16dp"
+                            app:boxCornerRadiusTopEnd="16dp"
+                            app:boxCornerRadiusTopStart="16dp"
+                            app:boxStrokeColor="@color/newtheme_2"
+                            app:fontFamily="@font/dmsans_regular">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/adharEdittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_baseline_confirmation_number_24"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="12"
+
+                                android:textColor="@color/labelrecyclerview"
+                                app:fontFamily="@font/dmsans_regular" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_aadharcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:saveEnabled="true"
+                            android:src="@drawable/ic_menu_camera"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/imagenameaadhar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:gravity="center"
+                        android:linksClickable="true"
+                        android:textColor="@color/newtheme_2"
+                        android:textColorLink="@color/newtheme_2"
+                        android:visibility="gone"
+
+                        app:fontFamily="@font/dmsans_regular"
+                        app:layout_constraintLeft_toLeftOf="@id/guideline_lefts"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintTop_toBottomOf="@+id/aadhar"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/pancard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintStart_toEndOf="@id/guideline_lefts">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/pan_number"
+                            android:textColorHint="@color/labelrecyclerview"
+                            app:boxCornerRadiusBottomEnd="16dp"
+
+                            app:boxCornerRadiusBottomStart="16dp"
+                            app:boxCornerRadiusTopEnd="16dp"
+                            app:boxCornerRadiusTopStart="16dp"
+                            app:boxStrokeColor="@color/newtheme_2"
+                            app:fontFamily="@font/dmsans_regular">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/panEdittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_baseline_confirmation_number_24"
+                                android:imeOptions="actionNext"
+                                android:maxLength="10"
+                                android:textColor="@color/labelrecyclerview"
+
+                                app:fontFamily="@font/dmsans_regular" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_pancard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:saveEnabled="true"
+                            android:src="@drawable/ic_menu_camera"
+
+                            android:visibility="visible"
+                            app:fontFamily="@font/dmsans_regular" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/imagenamepancard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:gravity="center"
+                        android:linksClickable="true"
+                        android:textColor="@color/newtheme_2"
+                        android:textColorLink="@color/newtheme_2"
+                        android:visibility="invisible"
+                        app:fontFamily="@font/dmsans_regular"
+
+                        app:layout_constraintLeft_toLeftOf="@id/guideline_lefts"
+                        app:layout_constraintRight_toRightOf="@id/guideline_rights"
+                        app:layout_constraintTop_toBottomOf="@+id/pancard"
+
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="@string/state"
+                        android:textColorHint="@color/labelrecyclerview"
+
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxStrokeColor="@color/newtheme_2"
+                        app:endIconTint="@color/labelrecyclerview"
+                        app:fontFamily="@font/dmsans_regular">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/stateSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="@color/labelrecyclerview"
+
+                            app:fontFamily="@font/dmsans_regular"
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/city"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="@string/city"
+                        android:textColorHint="@color/labelrecyclerview"
+
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxStrokeColor="@color/newtheme_2"
+                        app:endIconTint="@color/labelrecyclerview"
+                        app:fontFamily="@font/dmsans_regular">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/citySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="@color/labelrecyclerview"
+
+                            app:fontFamily="@font/dmsans_regular"
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/next"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_baseline_navigate_next_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

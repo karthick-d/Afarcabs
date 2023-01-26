@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_28dp"
+        android:background="@drawable/shape_round_rect">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_28dp"
+            android:text="Referral Code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnPositive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+          />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Enter the Referall code here"
+            android:id="@+id/referall_code"
+            android:textColorHint="@color/labelrecyclerview"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:fontFamily="@font/dmsans_regular"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:boxStrokeColor="@color/newtheme_2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/referall_edittext"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_places_insurance_agency"
+                android:imeOptions="actionNext"
+                android:layout_gravity="center"
+                android:inputType="text"
+                app:fontFamily="@font/dmsans_regular"
+                android:maxLength="50"
+                android:textColor="@color/labelrecyclerview" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPositive"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/margin_40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/blue_bg"
+            android:text="Apply"
+            android:textColor="@color/white"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

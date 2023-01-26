@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+
+        <TextView
+            android:id="@+id/driverLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/driver_id_proof"
+            android:textColor="@color/labelrecyclerview"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:fontFamily="@font/dmsans_regular"
+
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:text="@string/doc_text"
+            android:textColor="@color/labelrecyclerview"
+            android:textColorLink="@color/newtheme_2"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:fontFamily="@font/dmsans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/driverLabel"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/proof"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Id Proof"
+            android:textColorHint="@color/labelrecyclerview"
+            android:visibility="visible"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxStrokeColor="@color/newtheme_2"
+            app:endIconTint="@color/labelrecyclerview"
+            app:fontFamily="@font/dmsans_regular"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right"
+            app:layout_constraintStart_toEndOf="@id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/text">
+
+            <AutoCompleteTextView
+                android:id="@+id/proofSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="@color/labelrecyclerview"
+
+                app:fontFamily="@font/dmsans_regular"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pdffileTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:textColor="@color/newtheme_2"
+            android:textColorLink="@color/newtheme_2"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proof"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadfile"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/labelrecyclerview"
+            android:text="@string/browse"
+
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:fontFamily="@font/dmsans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pdffileTxt" />
+
+        <ImageView
+            android:id="@+id/photo_edittexts"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounde_profile"
+            android:clickable="false"
+            android:focusable="false"
+            android:saveEnabled="false"
+            android:scaleType="centerCrop"
+
+            android:visibility="gone"
+            app:contentScrim="?attr/colorPrimary"
+
+            app:layout_anchorGravity="center_horizontal|bottom"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadfile" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/finish"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_border_theme"
+            android:text="@string/finish"
+            android:textColor="@color/white"
+
+            android:textStyle="bold"
+            app:fontFamily="@font/dmsans_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/Login_avi"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            app:indicatorColor="#4897E0"
+            app:indicatorName="LineScalePulseOutIndicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

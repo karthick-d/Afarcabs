@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/values"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/labelrecyclerview"
+            android:layout_marginBottom="@dimen/dim_00"
+            android:layout_marginStart="15dp"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            app:fontFamily="@font/dmsans_bold"
+
+            android:text="@string/welcome_taji"
+            tools:ignore="SpUsage"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.wings.mile.activity.InstantAutoComplete
+            android:id="@+id/search_edittext"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_search_black_svg"
+            android:ems="10"
+            android:visibility="gone"
+            android:gravity="center|left"
+            android:hint="Search for Pilot's details"
+            android:padding="16dp"
+            android:text=""
+            android:textColor="@color/labelrecyclerview"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_right"
+            app:layout_constraintTop_toTopOf="@id/values" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+
+            app:layout_constraintTop_toBottomOf="@+id/search_edittext"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_right"
+            />
+
+        <TextView
+            android:id="@+id/text_view_no_record_found2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/no_record_found"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+        <ImageView
+            android:id="@+id/slideImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/afar_home"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/title"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adddriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:text="@string/start_app"
+        android:textColor="@color/white"
+        app:fontFamily="@font/dmsans_bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/Login_avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/newtheme_2"
+        app:indicatorName="LineScalePulseOutIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

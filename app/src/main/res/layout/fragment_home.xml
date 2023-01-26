@@ -1,0 +1,171 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.wings.mile.Driver.DriverMapActivity" />
+
+
+        <RelativeLayout
+            android:id="@+id/bottomSheet"
+            style="@style/Widget.Design.BottomSheet.Modal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:id="@+id/customerInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:translationZ="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/bringUpBottomLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="80sp"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:padding="15sp"
+                                android:src="@drawable/ic_keyboard_arrow_up_black_24dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/ride_in_progress"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/cancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:padding="15sp"
+                                android:src="@drawable/ic_cancel_black_24dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="20sp">
+
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/lighterGrey"
+                                android:drawableStart="@drawable/ic_phone"
+                                android:elevation="0dp"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:text="@string/phone_driver"
+                                android:textColor="@android:color/white"
+                                app:borderWidth="0dp"
+                                app:elevation="0dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:paddingLeft="10sp"
+                                android:paddingRight="10sp"
+                                android:text="@string/double_dash"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:borderWidth="0dp" />
+
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/openMaps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/lighterGrey"
+                                android:elevation="0dp"
+                                android:src="@drawable/ic_map_black_24dp"
+                                android:text="@string/phone_driver"
+                                android:textColor="@android:color/white"
+                                app:borderWidth="0dp"
+                                app:elevation="0dp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                        </LinearLayout>
+
+
+                        <com.ncorti.slidetoact.SlideToActView
+                            android:id="@+id/rideStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20sp"
+                            app:border_radius="4dp"
+                            app:inner_color="@color/colorAccent"
+                            app:slider_height="60dp"
+                            app:slider_icon="@drawable/ic_arrow_forward_black_24dp"
+                            app:slider_icon_color="@color/white"
+                            app:text="@string/picked_customer"
+                            app:text_color="@color/white"
+                            app:text_size="22sp"
+                            app:text_style="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rotation_degrees="5" />
+</FrameLayout>
+

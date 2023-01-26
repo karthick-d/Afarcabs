@@ -1,0 +1,145 @@
+<!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute -->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tool_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/newtheme_2"
+    android:paddingStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    tools:ignore="RtlSymmetry">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:clickable="true"
+
+                    android:focusable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/afar_192"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/humburger_membership"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="bottom|end"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_view"
+            app:layout_constraintEnd_toStartOf="@+id/notification_layout"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menu_dash"
+                android:gravity="center"
+                android:fontFamily="@font/dmsans_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/offline_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_title"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/offline_image_view"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/offline_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/notification_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical|center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/notify"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_notifications_24"
+                android:textColor="@color/blue"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/notificationcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/round_badge"
+                android:minWidth="20dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="1dp"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

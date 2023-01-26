@@ -1,0 +1,462 @@
+<resources>
+    <string name="app_name">AFAR PARTNER</string>
+    <string name="hyperlink"><a href="https://learntodroid.com">Forgot your Password?</a></string>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Vehile">
+        <item>Auto</item>
+        <item>Bike</item>
+    </string-array>
+
+    <string-array name="State">
+        <item>TamilNadu</item>
+
+    </string-array>
+
+    <string-array name="City">
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Madurai</item>
+    </string-array>
+    <string name="no_record_found">No records found</string>
+    <string name="upload_via_camera">Upload via Camera</string>
+    <string name="upload_via_gallery">Upload via Gallery</string>
+    <string name="application_has_been_updated_successfully">Application has been updated successfully</string>
+    <string name="img_size_alert">Size must be less than 12KB - 20KB</string>
+    <string name="ok">ok</string>
+    <string name="gotiit">Get Started</string>
+    <string name="header">Pilot\'s Details</string>
+    <string name="home">Home</string>
+    <string name="password_placeholder">Password</string>
+    <string name="password_hint">********</string>
+    <string name="profile">Profile</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="phone_auth_subtitle">Please enter your phone number to verify your account</string>
+    <string name="refer_code"><u>Have a Referral code?click here to enter referral code</u></string>
+    <string name="otp_auth_subtitle"> OTP received in %1$s</string>
+    <string name="verify">Verify</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send">send</string>
+    <string name="otp">Otp</string>
+    <string name="verify_your_number">Verify Your Number</string>
+    <string name="skip">Skip</string>
+    <string name="open_file">Open File</string>
+    <string name="facebook_app_id">839020780855404</string>
+    <string name="fb_login_protocol_scheme">fb839020780855404</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dash">Dashboard</string>
+    <string name="menu_wallets">My wallets</string>
+    <string name="menu_history">History</string>
+    <string name="menu_rides">Your Rides</string>
+    <string name="menu_payments">Payments</string>
+    <string name="menu_refer">Refer a Friend</string>
+    <string name="menu_savedplace">Saved Places</string>
+    <string name="menu_help">Support</string>
+    <string name="menu_about">About</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoicmFoYW1hdGhqYW4iLCJhIjoiY2w5aWF0Z3B5MTVtMjN2cnExc3FxdjkyMyJ9.acI6a5iNQodY6esmIs-A-w</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Pilot Details</string>
+    <string name="second_fragment_label">Pilot Details</string>
+    <string name="third_fragment_label">Pilot Details</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="welcome_taji">Welcome To AFAR CABS!!!</string>
+    <string name="hello">Hello</string>
+    <string name="sign_in_text">Sign in with Admin Credentials</string>
+    <string name="email_placeholder">E-mail</string>
+    <string name="email_hint">E-mail Address</string>
+    <string name="email">E-mail Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="accountSignUp">Create a New AFAR Admin Account</string>
+    <string name="sign_up_text">Sign up to get your AFAR Admin account</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="fname_placeholder">First Name</string>
+    <string name="lname_placeholder">Last Name</string>
+    <string name="phone_number_placeholder">Phone Number</string>
+    <string name="confirm_password_placeholder">Confirm Password</string>
+    <string name="sign_up">Create</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">GOOGLE_MAPS_API</string>
+    <string name="firebase_functions_base_url" templateMergeStrategy="preserve" translatable="false">https://firebase_functions_base_url/</string>
+    <string name="publishablekey" templateMergeStrategy="preserve" translatable="false">stripe_pk_key</string>
+    <string name="stripe_client_key" templateMergeStrategy="preserve" translatable="false">stripe_sk_key</string>
+    <string name="firebase_hosting_url" templateMergeStrategy="preserve" translatable="false">https://firebase_hosting_url/</string>
+
+
+    <string name="phone_driver">Phone</string>
+    <string name="call_uber">Call Car</string>
+    <string name="type_4">Bike</string>
+    <string name="type_3">SUV</string>
+    <string name="type_2">Van</string>
+    <string name="type_1">Car</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name </string>
+    <string name="confirm">Confirm</string>
+    <string name="working">Working</string>
+    <string name="destination">Destination</string>
+    <string name="picked_customer">Picked customer</string>
+    <string name="car">Car</string>
+    <string name="balance">Balance</string>
+    <string name="payout">Payout</string>
+    <string name="from_to">From - To</string>
+    <string name="distance">Distance</string>
+    <string name="date">Date</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Login</string>
+    <string name="register">Register</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="customer">Customer</string>
+    <string name="driver">Driver</string>
+    <string name="getting_driver">Getting Your Driver ....</string>
+    <string name="looking_driver">Looking For Your Driver…</string>
+    <string name="driver_here">Driver Here</string>
+    <string name="driver_found">Driver Found</string>
+    <string name="drive_complete">Drive Completed</string>
+    <string name="not_approved">Your Account Has Not Been Approved</string>
+
+
+    <string name="style_json">
+  [
+        {
+        \elementType\: \"geometry\",
+        \stylers\: [{\color\: \"#242f3e"\}]
+        },
+        {
+        \elementType\: \"labels.text.stroke\",
+        \stylers\: [{\color\: \"#242f3e"\}]
+        },
+        {
+        \elementType\: \"labels.text.fill\",
+        \stylers\: [{\color\: \"#746855"\}]
+        },
+    {
+        \"featureType\": \"all\",
+        \"elementType\": \"labels\",
+        \"stylers\": [
+            {
+                \"visibility\": \"on\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"administrative\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"visibility\": \"on\"
+            },
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"landscape\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.attraction\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.business\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.government\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#dfdcd5\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.medical\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#dfdcd5\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.park\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#bad294\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.place_of_worship\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.school\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"poi.sports_complex\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#efebe2\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"road.highway\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+            {
+                \"color\": \"#ffffff\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"road.highway\",
+        \"elementType\": \"geometry.stroke\",
+        \"stylers\": [
+            {
+                \"visibility\": \"on\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"road.arterial\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+            {
+                \"color\": \"#ffffff\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"road.arterial\",
+        \"elementType\": \"geometry.stroke\",
+        \"stylers\": [
+            {
+                \"visibility\": \"on\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"road.local\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+            {
+                \"color\": \"#fbfbfb\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"road.local\",
+        \"elementType\": \"geometry.stroke\",
+        \"stylers\": [
+            {
+                \"visibility\": \"on\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"transit\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"visibility\": \"on\"
+            }
+        ]
+    },
+    {
+        \"featureType\": \"water\",
+        \"elementType\": \"all\",
+        \"stylers\": [
+            {
+                \"color\": \"#a5d7e0\"
+            }
+        ]
+    }
+]
+  </string>
+    <string name="to">To…</string>
+    <string name="from">From…</string>
+    <string name="no_phone_call_permissions">You didn\'t give phone call permissions</string>
+    <string name="driver_no_phone">Driver doesn\'t have a connected number</string>
+    <string name="your_trips">Your Trips</string>
+    <string name="waiting_for_location">Waiting for Location</string>
+    <string name="save">save</string>
+    <string name="payment">payment</string>
+    <string name="add_card">Add Card</string>
+    <string name="current_location">Current Location</string>
+    <string name="no_driver_found">Unfortunately, No drivers were found around you.</string>
+    <string name="no_drivers_around">No drivers around</string>
+    <string name="ride_in_progress">Ride In Progress</string>
+    <string name="payout_amount">0 €</string>
+    <string name="no_default_payment">No default payment available</string>
+    <string name="no_payment_available_message">you have to setup a payment card before asking for a driver.</string>
+    <string name="wait_send_payout">Please wait while we send you the payout</string>
+    <string name="payout_issued">Payout Issued</string>
+    <string name="license">license</string>
+    <string name="no_rides_to_show">No Rides to show</string>
+    <string name="type">Type</string>
+    <string name="service">Service</string>
+    <string name="how_was_your_ride">How was your ride?</string>
+    <string name="money_type"> €</string>
+    <string name="double_dash">--</string>
+    <string name="there_doesn_t_seem_to_be_a_driver_near_you_you_can_cancel_or_keep_searching">There doesn\'t seem to be a driver near you, you can cancel or keep searching.</string>
+    <string name="available_for_payout">Available for payout:</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="i_authorise_stripe_samples_to_send_instructions_to_the_financial_institution_that_issued_my_card_to_take_payments_from_my_card_account_in_accordance_with_the_terms_of_my_agreement_with_you">I authorise Stripe Samples to send instructions to the financial institution that issued my card to take payments from my card account in accordance with the terms of my agreement with you.</string>
+    <string name="make_default">Make Default</string>
+    <string name="delete">Delete</string>
+    <string name="_1923_1239_8123_9138">1923 1239 8123 9138</string>
+    <string name="month_year">Month/Year</string>
+    <string name="_05_22">05/22</string>
+    <string name="name_last_name">Name Last Name</string>
+    <string name="rideid">rideId</string>
+    <string name="_120">120 €</string>
+    <string name="_10_03_2010">10 / 03 / 2010</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="selectlanguage">You have Selected English</string>
+    <string name="selectlanguages">You have Selected English</string>
+    <string name="ride">Request a ride get picked up by a nearby community driver</string>
+    <string name="req_ride">Request Ride</string>
+    <string name="confirm_ride">Confirm Your Driver</string>
+    <string name="drivers">Huge drivers networks helps you find comfortable ,safe and cheap ride</string>
+    <string name="slang">நீங்கள் தமிழ் தேர்ந்தெடுத்துள்ளீர்கள்</string>
+    <string name="track_ride">Track your ride</string>
+    <string name="phone_text">Phone Permission Required</string>
+    <string name="know_ride">Know your driver in advance and be able to view current location in real time on map</string>
+    <string name="allow_permission">ALLOW PERMISSION</string>
+    <string name="accept_job">Accept a job</string>
+    <string name="accept_ride">Accept and complete rides at your own pace</string>
+    <string name="earn_money">Earn money</string>
+    <string name="earn_money_text">Join Afar cabs and be your own boss</string>
+    <string name="enable_location">Enable location</string>
+    <string name="enable_location_text">Choose your location and go online to find requests around you</string>
+    <string name="signup_text">Sign up to begin your journey with AfarCabs </string>
+    <string name="confirm_phone">Continue with Phone Number </string>
+
+    <string name="authenticate_ride">For us to authenticate your device and let you call customers directly from the app</string>
+    <string name="login_earn_message">Registration Process Pending,click on register to  complete your application then earn with us</string>
+    <string name="complte_register">Registration Process Completed,click on login start your application to earn with us</string>
+    <string name="sms_start">SMS Retriever starts</string>
+    <string name="start_app">Start your Application</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="email_id">Email-ID</string>
+    <string name="address">Address</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="vehicle_registration_number">Vehicle Registration Number</string>
+    <string name="insurance_number">Insurance Number</string>
+    <string name="insurance_expiry_date">Insurance Expiry Date</string>
+    <string name="driver_license_number">Driver License Number</string>
+    <string name="license_expiry_date">License Expiry Date</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="driver_id_proof">Driver\'s Id Proof</string>
+    <string name="account_number">Account Number</string>
+    <string name="name_bank">Name of the Bank</string>
+    <string name="name_branch">Name of the Branch</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="upload_pdf">Upload PDF file</string>
+    <string name="upload_passbook">Upload Passbook</string>
+    <string name="view_profile">View Profile</string>
+    <string name="signout">Are you sure do you want to \nSign out?</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="upload_pdf_text">Upload Passbook Front copy</string>
+    <string name="verify_account_text">Click here to verify your account</string>
+    <string name="doc_text">If required any 1 vehicle\'s/Pilot\'s Extra Documents can be uploaded Here</string>
+    <string name="browse">Browse...</string>
+    <string name="finish">Finish</string>
+    <string name="id_proof">Id Proof</string>
+    <string name="service_not_available">Service not available ..check network connection</string>
+    <string name="no_address_found">No address found</string>
+    <string name="address_found">address found</string>
+    <string name="not_support_area">This area is not supported yet</string>
+    <string name="confirm_location">Confirm Location</string>
+    <string name="search_place">Search a place</string>
+    <string name="confirm_pickup">Confirm pickup</string>
+    <string name="confirm_dest">Confirm destination</string>
+    <string name="failed_select_location">failed to select location please try again</string>
+    <string name="about_us">AFAR Cabs was founded by Ms. Sulthana Rasiya Nasurudeen and Mr. Mohamed Asik, with a mission to build
+portability for people of all ages in a secured way mainly focusing on women and child safety. The AFAR
+Technologies headquarters is located in Madurai, Tamilnadu.
+We at AFAR cabs, envision to support Android users with a safe and hassle-free mobility platform. We
+have made travelling all the way more comfortable and seek to provide our users an enriching
+experience. All you need to do is just enable your location, go online, book a service and within span of
+few minutes, the cab arrives at the specified location. We also serve our customers with on-time
+delivery of goods and offer door-to-door service of commodity.
+Apart from serving our customers, we also ensure the satisfaction and happiness of our Pilot’s who
+commute our customers to their desired location. We encourage them by giving reward points and
+bonus for their commendable job done.
+We provide our pilots and users with geo-location services on three vital factors – accessing the
+location, providing the navigation details, and providing mapping software. The on-boarding and
+registration process are made seamless with good UI/UX designs to ease our customer navigation. We
+appoint our pilots through proper verification of their ID proof and driving license.</string>
+</resources>

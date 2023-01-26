@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_base"
+    android:padding="10dp">
+
+    <View
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/placeholderImage"
+        android:layout_height="@dimen/placeholderImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/user" />
+
+
+    <TextView
+        android:id="@+id/textmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_toStartOf="@+id/delete"
+        android:layout_toEndOf="@id/thumbnail"
+
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textmessage"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/delete"
+        android:layout_toEndOf="@id/thumbnail"
+        android:text=""
+
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_user_metrics_icn" />
+
+
+</RelativeLayout>

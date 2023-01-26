@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        android:foregroundGravity="clip_vertical|center_horizontal"
+        app:cardCornerRadius="15dp">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="395dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintRight_toRightOf="@id/guideline_right"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_left">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Mobile Number"
+                android:textColorHint="@color/labelrecyclerview"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:fontFamily="@font/dmsans_regular"
+
+                app:boxStrokeColor="@color/newtheme_2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/numberEdittext"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:drawableEnd="@drawable/ic_baseline_phone_24"
+                    android:textColor="@color/labelrecyclerview"
+
+
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Email-ID"
+                android:textColorHint="@color/labelrecyclerview"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:fontFamily="@font/dmsans_regular"
+
+                app:boxStrokeColor="@color/newtheme_2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEdittext"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/labelrecyclerview"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:drawableEnd="@drawable/ic_baseline_email_24"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Password"
+                android:textColorHint="@color/labelrecyclerview"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/labelrecyclerview"
+                app:fontFamily="@font/dmsans_regular"
+
+                app:boxStrokeColor="@color/newtheme_2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:textColor="@color/labelrecyclerview"
+
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Confirm Password"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:endIconMode="password_toggle"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:textColorHint="@color/labelrecyclerview"
+                app:endIconTint="@color/labelrecyclerview"
+                app:boxStrokeColor="@color/labelrecyclerview">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/retypeEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/labelrecyclerview"
+                    app:fontFamily="@font/dmsans_regular"
+
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="120dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/signup"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:textColor="@color/white"
+                android:background="@drawable/login_border_theme"
+                android:layout_marginTop="20dp"
+                app:layout_constraintRight_toRightOf="@id/retype_edittext"
+                app:layout_constraintTop_toBottomOf="@+id/retype_edittext"
+
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.wings.mile.FirstFragment"
+        android:label="@string/header"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_FifthFragment"
+            app:destination="@id/FifthFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.wings.mile.Adddrivers.Driverdetails"
+        android:label="@string/header"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.wings.mile.Adddrivers.Driverdetails1"
+        android:label="@string/header"
+        tools:layout="@layout/activity_main1">
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_FourthFragment"
+            app:destination="@id/FourthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FourthFragment"
+        android:name="com.wings.mile.Adddrivers.Driverdetails2"
+        android:label="@string/header"
+        tools:layout="@layout/activity_main2">
+
+        <action
+            android:id="@+id/action_FourthFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FifthFragment"
+        android:name="com.wings.mile.ViewDrivers.DetailActivity"
+        android:label="@string/header"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/action_FifthFragment_to_SixthFragment"
+            app:destination="@id/SixthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SixthFragment"
+        android:name="com.wings.mile.ViewDrivers.DetailsActivity1"
+        android:label="@string/header"
+        tools:layout="@layout/activity_main1">
+
+        <action
+            android:id="@+id/action_SixthFragment_to_SeventhFragment"
+            app:destination="@id/SeventhFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SeventhFragment"
+        android:name="com.wings.mile.ViewDrivers.DetailsActivity2"
+        android:label="@string/header"
+        tools:layout="@layout/activity_main2">
+
+        <action
+            android:id="@+id/action_SixthFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+    </fragment>
+
+</navigation>

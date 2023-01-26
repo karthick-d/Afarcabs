@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="250dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_gallery"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editext_rounded"
+            android:backgroundTint="@color/newtheme_2"
+            android:padding="@dimen/margin_16dp"
+            android:text="@string/upload_via_gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_camera"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/button_gallery"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:background="@drawable/editext_rounded"
+            android:gravity="center"
+            android:padding="@dimen/margin_16dp"
+            android:text="@string/upload_via_camera"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/imagenameplate"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/button_camera"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:gravity="center"
+            android:text="* Kindly upload jpeg,jpg or pdf files only of size greater 12kb and lesser than 20kb"
+            android:textColor="@color/red"
+            android:textColorLink="@color/newtheme_2"
+
+            android:visibility="visible"
+
+
+            />
+    </RelativeLayout>
+
+</layout>

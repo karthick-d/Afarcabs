@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/sad"
+            android:title="@string/menu_dash" />
+        <item
+            android:id="@+id/nav_ride"
+            android:icon="@drawable/rider"
+            android:title="@string/menu_rides" />
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_payments" />
+        <item
+            android:id="@+id/nav_refer"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_refer" />
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_help" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_about" />
+    </group>
+</menu>

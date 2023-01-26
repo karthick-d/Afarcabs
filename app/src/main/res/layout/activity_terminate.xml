@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_on_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/app"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Termination Reason"
+            android:textColor="@color/labelrecyclerview"
+            android:textSize="20sp"
+            app:fontFamily="@font/dmsans_regular"
+
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/johnCena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:text="Driver's Request"
+                    android:textColor="@color/labelrecyclerview"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/randyOrton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Closure of Contract"
+                android:textColor="@color/labelrecyclerview"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/romanReigns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Absconded"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:textColor="@color/labelrecyclerview"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/goldBerg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Misdeeds"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:textColor="@color/labelrecyclerview"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RadioButton
+                android:id="@+id/sheamus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="Others"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:textColor="@color/labelrecyclerview"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="1000"
+            android:textColorHint="@color/gray"
+            app:helperTextTextColor="@color/gray"
+            app:helperText="Min 10 characters"
+            app:boxBackgroundMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_textdescription"
+                android:hint="Description"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:maxLength="1000"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:background="@drawable/ticket"
+                android:gravity="top|start"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColorHint="@color/labelrecyclerview"
+                android:textColor="@color/labelrecyclerview"
+                android:inputType="textMultiLine|textNoSuggestions"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ticket"
+            android:focusable="true"
+            android:gravity="start"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content
+"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_border_theme"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/etDescription"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel_border_theme"
+                android:layout_marginStart="40dp"                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:fontFamily="@font/dmsans_regular"
+
+                android:text="Cancel"
+                android:textAllCaps="false"
+                    android:textColor="@color/labelrecyclerview"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

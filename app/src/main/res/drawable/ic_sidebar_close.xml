@@ -1,0 +1,17 @@
+<!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+  <path
+      android:pathData="M14,0L14,0A14,14 0,0 1,28 14L28,14A14,14 0,0 1,14 28L14,28A14,14 0,0 1,0 14L0,14A14,14 0,0 1,14 0z"
+      android:strokeAlpha="0"
+      android:fillColor="#fff"
+      android:fillAlpha="0"/>
+  <path
+      android:pathData="M14,5a9,9 0,1 1,-9 9A9,9 0,0 1,14 5ZM14,6.5A7.5,7.5 0,1 0,21.5 14,7.5 7.5,0 0,0 14,6.5ZM10.758,10.949l0.087,-0.1A0.75,0.75 0,0 1,11.8 10.758l0.1,0.087L14,12.94l2.095,-2.095a0.75,0.75 0,0 1,0.957 -0.087l0.1,0.087a0.75,0.75 0,0 1,0.087 0.957l-0.087,0.1L15.06,14l2.095,2.095a0.75,0.75 0,0 1,0.087 0.957l-0.087,0.1a0.75,0.75 0,0 1,-0.957 0.087l-0.1,-0.087L14,15.06 11.905,17.155a0.75,0.75 0,0 1,-0.957 0.087l-0.1,-0.087a0.75,0.75 0,0 1,-0.087 -0.957l0.087,-0.1L12.94,14 10.845,11.905a0.75,0.75 0,0 1,-0.087 -0.957l0.087,-0.1Z"
+      android:strokeAlpha="0.392"
+      android:fillColor="#212121"
+      android:fillAlpha="0.392"/>
+</vector>

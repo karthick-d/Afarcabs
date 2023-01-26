@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="26dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <ImageView
+                android:id="@+id/iconImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/about"
+                android:text="TextView"
+                app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="cnbzxbcbcb"
+                android:textColor="@color/menu_text"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/iconImage"
+                app:layout_constraintLeft_toRightOf="@id/iconImage"
+                app:layout_constraintTop_toTopOf="@id/iconImage"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/expand_view"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/details_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@color/dot_dark_screen1"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cont_layout_top">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/details_lays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/iconImages"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/driver_license"
+                    android:text="TextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/licenseexpiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="License Expiry"
+                    android:textColor="@color/menu_text"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/iconImages"
+                    app:layout_constraintLeft_toRightOf="@id/iconImages"
+                    app:layout_constraintTop_toTopOf="@id/iconImages"
+                    tools:ignore="MissingConstraints" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_right"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent=".84" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/details_layss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/icons"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/insurance"
+                    android:layout_marginTop="10dp"
+                    android:text="TextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/insurance_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="Insurance Expiry"
+                    android:textColor="@color/menu_text"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/icons"
+                    app:layout_constraintLeft_toRightOf="@id/icons"
+                    app:layout_constraintTop_toTopOf="@id/icons"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_rights"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent=".84" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/account_layss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/icons_user"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_marginTop="10dp"
+                    android:text="TextView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/useraccounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="Account Details"
+                    android:textColor="@color/menu_text"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/icons_user"
+                    app:layout_constraintLeft_toRightOf="@id/icons_user"
+                    app:layout_constraintTop_toTopOf="@id/icons_user"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_rightss"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintGuide_percent=".84" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</layout>

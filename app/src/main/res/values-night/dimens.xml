@@ -1,0 +1,163 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16sp</dimen>
+    <dimen name="project_header1">25sp</dimen>
+    <dimen name="project_header2">20sp</dimen>
+    <dimen name="project_text">15sp</dimen>
+    <dimen name="logo_width">150dp</dimen>
+    <dimen name="logo_height">125dp</dimen>
+    <dimen name="slide_title">16sp</dimen>
+    <dimen name="slide_title_tab">30sp</dimen>
+    <dimen name="slide1_title">15dp</dimen>
+    <dimen name="slidesize">18sp</dimen>
+    <dimen name="slide_desc">14sp</dimen>
+    <dimen name="slide_desc_tab">26sp</dimen>
+    <dimen name="size_22_dp">22sp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="textsize_phone">12sp</dimen>
+    <dimen name="textsize_phone_large">14sp</dimen>
+    <dimen name="screen_edge_horizontal_margin">16sp</dimen>
+    <dimen name="screen_edge_vertical_margin">16dp</dimen>
+    <dimen name="horizontal_divider_height">1dp</dimen>
+    <dimen name="placeholderImage">60dp</dimen>
+    <dimen name="placeholderTextHeight">8dp</dimen>
+    <dimen name="padding_10">4dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_2dp">2dp</dimen>
+    <dimen name="padding_3dp">3dp</dimen>
+    <dimen name="pl_pattern_dot_line_width">3dp</dimen>
+    <dimen name="preference_seekbar_padding_start">3dp</dimen>
+    <dimen name="preference_seekbar_padding_end">3dp</dimen>
+    <dimen name="preference_seekbar_value_width">3dp</dimen>
+    <dimen name="pl_pattern_dot_size">12dp</dimen>
+    <dimen name="pl_pattern_dot_size_activated">28dp</dimen>
+
+    // text size
+    <dimen name="default_text_size">25sp</dimen>
+    <dimen name="default_button_size">60dp</dimen>
+
+    // dots
+    <dimen name="dot_diameter">12dp</dimen>
+    <dimen name="dot_spacing">12.2dp</dimen>
+    <dimen name="dot_margintop">25dp</dimen>
+
+    //attempts
+    <dimen name="attempts_margintop">15dp</dimen>
+    <dimen name="textsize_attempts">13sp</dimen>
+
+    <dimen name="lockview_margin">10dp</dimen>
+
+    // layout
+    <dimen name="layout_maxwidth">500dp</dimen>
+    <dimen name="layout_padding">10dp</dimen>
+    <dimen name="layout">7dp</dimen>
+
+    // title
+    <dimen name="textsize_title">20sp</dimen>
+    <dimen name="title_margintop">54dp</dimen>
+    <dimen name="title_marginstart">10dp</dimen>
+    <dimen name="title_marginend">10dp</dimen>
+    <dimen name="textsize">14sp</dimen>
+    <dimen name="delete_radius">6dp</dimen>
+    <dimen name="default_delete_button_size_width">39dp</dimen>
+    <dimen name="default_delete_button_size_height">27dp</dimen>
+    // border
+    <dimen name="button_border">0.5dp</dimen>
+    <dimen name="dot_border">1dp</dimen>
+    <dimen name="default_horizontal_spacing">40dp</dimen>
+    <dimen name="default_vertical_spacing">18dp</dimen>
+    <dimen name="htitle">17sp</dimen>
+
+    //Margin dimens
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_17dp">17dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_166dp">166dp</dimen>
+    <dimen name="margin_150dp">150dp</dimen>
+    <dimen name="margin_140dp">140dp</dimen>
+    <dimen name="margin_120dp">120dp</dimen>
+    <dimen name="margin_100dp">100dp</dimen>
+    <dimen name="margin_70dp">70dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+
+
+    //Font dimen
+    <dimen name="font_8sp">8sp</dimen>
+    <dimen name="font_7sp">7sp</dimen>
+    <dimen name="font_9sp">9sp</dimen>
+    <dimen name="font_10sp">10sp</dimen>
+    <dimen name="font_11sp">11sp</dimen>
+    <dimen name="font_12sp">12sp</dimen>
+    <dimen name="font_13sp">13sp</dimen>
+    <dimen name="font_14sp">14sp</dimen>
+    <dimen name="font_15sp">15sp</dimen>
+    <dimen name="font_16sp">16sp</dimen>
+    <dimen name="font_18sp">18sp</dimen>
+    <dimen name="font_20sp">20sp</dimen>
+    <dimen name="font_24sp">24sp</dimen>
+    <dimen name="font_26sp">26sp</dimen>
+    <dimen name="font_28sp">28sp</dimen>
+    <dimen name="font_32sp">32sp</dimen>
+    <dimen name="font_36sp">36sp</dimen>
+    <dimen name="font_40sp">40sp</dimen>
+
+
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="size_50_dp">50dp</dimen>
+    <dimen name="elevation_low">9dp</dimen>
+    <dimen name="elevation_high">12dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="view_height_40dp">40dp</dimen>
+    <dimen name="view_height_60dp">60dp</dimen>
+    <dimen name="container_height">0dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+    <dimen name="height_48dp">48dp</dimen>
+    <dimen name="height_100dp">100dp</dimen>
+    <dimen name="height_150dp">150dp</dimen>
+    <dimen name="height_130dp">130dp</dimen>
+    <dimen name="height_40dp">40dp</dimen>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+</resources>

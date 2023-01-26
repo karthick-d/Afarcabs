@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    android:background="@color/profile_color_bg">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+
+    <TextView
+        android:id="@+id/linktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/view_profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
+        app:layout_constraintLeft_toLeftOf="@+id/profile"
+        app:layout_constraintRight_toRightOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_sidebar_close"
+        app:layout_constraintBottom_toBottomOf="@+id/linktext"
+        app:layout_constraintRight_toRightOf="@+id/guidelineend"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/afar_192"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineStart"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/linktext"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/profile_membership_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/margin_16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineend"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineStart"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="@dimen/margin_20dp"
+        android:text=""
+        android:textSize="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineend"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineStart"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/textname"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:screenOrientation="portrait"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingEnd="0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/labelrecyclerview"
+                    android:textSize="@dimen/dim_40"
+                    android:layout_marginBottom="@dimen/dim_00"
+                    android:text="@string/hello"
+                    android:visibility="gone"
+
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/labelrecyclerview"
+                    android:layout_marginBottom="@dimen/dim_00"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/dmsans_bold"
+
+                    android:text="@string/welcome_taji"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/newlogo"
+           />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dim_00"
+                android:gravity="center"
+                android:text="@string/sign_in_text"
+                android:textColor="@color/labelrecyclerview"
+                tools:ignore="SpUsage" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/dim_20"
+                android:paddingEnd="@dimen/dim_20">
+
+                <EditText
+                    android:id="@+id/numberEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/grey_borderline"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dim_10"
+                    android:textColor="@color/labelrecyclerview"
+                    android:text="karthick.vvr@gmail.com"
+                    android:textSize="@dimen/dim_15"
+                    tools:ignore="SpUsage" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_15"
+                    android:layout_marginEnd="@dimen/dim_10"
+                    android:layout_marginTop="3dp"
+                    android:paddingEnd="@dimen/dim_05"
+                    android:paddingStart="@dimen/dim_05"
+                    android:background="#ffffff"
+                    android:textColor="@color/labelrecyclerview"
+
+                    android:text="@string/email_placeholder" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="@dimen/dim_20"
+                android:paddingEnd="@dimen/dim_20">
+
+                <EditText
+                    android:id="@+id/passwordEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/grey_borderline"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/dim_10"
+                    android:text="Taxi@123"
+                    android:textColor="@color/labelrecyclerview"
+                    android:textSize="@dimen/dim_15"
+
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_15"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="@dimen/dim_10"
+                    android:background="#ffffff"
+                    android:paddingStart="@dimen/dim_05"
+                    android:paddingEnd="@dimen/dim_05"
+                    android:textColor="@color/labelrecyclerview"
+
+                    android:text="@string/password_placeholder" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_weight="0.5">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/dim_20"
+                android:paddingStart="@dimen/dim_20"
+                android:weightSum="5">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="2"
+                    android:gravity="end"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessLeaf" />
+
+                <RelativeLayout
+                    android:id="@+id/forgetpassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="end"
+                    android:visibility="gone"
+                    android:gravity="end">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="end"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="@dimen/dim_10"
+                        android:text="@string/forgotPassword"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/dark_grey"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/authFailed"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dim_05"
+                android:paddingEnd="@dimen/dim_05">
+
+                <TextView
+                    android:id="@+id/accountError"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/error"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dim_00"
+                    android:text="@string/sign_in_text"
+                    tools:ignore="SpUsage" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:paddingStart="@dimen/dim_05"
+                android:paddingEnd="@dimen/dim_05">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_border_theme"
+                    android:paddingStart="@dimen/dim_40"
+                    android:paddingEnd="@dimen/dim_40"
+                    android:text="@string/sign_in"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/signUpLink"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/dim_20"
+            android:paddingEnd="@dimen/dim_20"
+            android:layout_weight="0.75">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_gravity="end"
+                    android:gravity="end">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="end"
+                        android:background="@android:color/transparent"
+                        android:text="@string/accountSignUp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/labelrecyclerview"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/Login_avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/newtheme_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:indicatorName="LineScalePulseOutIndicator" />
+</androidx.constraintlayout.widget.ConstraintLayout>

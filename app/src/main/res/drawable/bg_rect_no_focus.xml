@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute, AndroidUnknownAttribute -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:radius="0dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+    <solid
+        android:color="@color/light_grey_1"
+        android:backgroundTint="@color/light_grey_1"
+        app:backgroundTint="@color/light_grey_1" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/grey" />
+
+
+</shape>

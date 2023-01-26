@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_1" />
+        <ImageView
+            android:id="@+id/imageView_phone_auth"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:src="@drawable/phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.100000024"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/textView_title_phone_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/verify_your_number"
+            android:textColor="@color/text_header_color"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_phone_auth" />
+
+        <TextView
+            android:id="@+id/textView_subtitle_phone_auth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/phone_auth_subtitle"
+            android:lineSpacingExtra="6dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_title_phone_auth"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:hint="@string/phone_number"
+            android:layout_marginTop="10dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            android:textColorHint="@color/gray"
+            app:fontFamily="@font/dmsans_regular"
+            app:layout_constraintTop_toBottomOf="@id/textView_subtitle_phone_auth"
+
+            app:boxStrokeColor="@color/newtheme_2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:text="+91"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:imeOptions="actionDone"
+                >
+
+                <requestFocus />
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/referall_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/refer_code"
+            android:lineSpacingExtra="6dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_phone"            app:layout_constraintWidth_percent="0.7" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_verify_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:background="@drawable/login_border_theme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/referall_code"
+            app:layout_constraintWidth_percent="0.3"
+            android:padding="16dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

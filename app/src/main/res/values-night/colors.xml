@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#0002FC</color>
+    <color name="purple_500">#0002FC</color>
+    <color name="purple_700">#0002FC</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="newtheme">#034752</color>
+    <color name="newtheme_1">#1A385A</color>
+    <color name="newtheme_2">#0002FC</color>
+
+    <!--Indigo 500-->
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+
+    <color name="text_header_color">#212121</color>
+    <color name="textColorPrimary">#442C2E</color>
+    <color name="textInputOutlineColor">#FBB8AC</color>
+
+
+    <color name="black_trans80">#33000000</color>
+    <color name="indicator_unselected">#4D000000</color>
+
+    <color name="panchayatinside">#091859</color>
+    <color name="blue_grey">#455A64</color>
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF9800</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="brown">#795548</color>
+    <color name="grey">#E0E0E0</color>
+
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+
+    <color name="cyan_50">#E0F7FA</color>
+    <color name="amber_50">#FFF8E1</color>
+    <color name="purple_50">#F3E5F5</color>
+
+
+    <color name="bluetext">#3Fddff</color>
+    <color name="bluetext1">#2979ff</color>
+    <color name="gray">#596064</color>
+    <color name="black_light">#1F274A</color>
+    <color name="add_new_phms">#D9E4EF</color>
+    <color name="grey_bg">#F1F3F8</color>
+    <color name="light_grey_1">#DFE3E8</color>
+    <color name="dialog_background_transparent">#99000000</color>
+    <color name="textColor4">#4897E0</color>
+    <color name="bybck">#cccccc</color>
+    <color name="socialmedia">#7B7979</color>
+
+    <!-- Greyscales -->
+    <color name="grey50">#FAFAFA</color>
+    <color name="grey200">#EEEEEE</color>
+    <color name="grey500">#9E9E9E</color>
+    <color name="grey600">#757575</color>
+    <color name="white_alpha_40">#B3FFFFFF</color>
+    <color name="white_alpha_95">#F2FFFFFF</color>
+    <color name="black_alpha_12">#1F000000</color>
+    <color name="black_alpha_30">#4D000000</color>
+    <color name="black_alpha_87">#DD000000</color>
+
+    <!-- Others -->
+    <color name="indigo500">#3F51B5</color>
+    <color name="indigo600">#3949AB</color>
+    <color name="indigo500_alpha_54">#8A3F51B5</color>
+
+    <color name="teal500">#009688</color>
+    <color name="teal600">#00897B</color>
+    <color name="teal500_alpha_54">#8A009688</color>
+
+    <color name="pink500">#E91E63</color>
+    <color name="pink600">#D81B60</color>
+    <color name="pink500_alpha_54">#8AE91E63</color>
+
+    <color name="amber500">#FFC107</color>
+    <color name="amber600">#FFB300</color>
+    <color name="amber500_alpha_54">#8AFFC107</color>
+
+    <color name="orange500">#FF9800</color>
+    <color name="orange600">#FB8C00</color>
+    <color name="orange500_alpha_54">#8AFF9800</color>
+
+    <color name="purple500">#9C27B0</color>
+    <color name="purple600">#8E24AA</color>
+    <color name="purple500_alpha_54">#8A9C27B0</color>
+
+    <color name="lightgreen500">#8BC34A</color>
+    <color name="lightgreen600">#7CB342</color>
+    <color name="lightgreen500_alpha_54">#8A8BC34A</color>
+
+
+    <color name="red500">#F44336</color>
+    <color name="red600">#E53935</color>
+    <color name="red500_alpha_54">#8AF44336</color>
+
+
+    <color name="colorPrimary">#101f62</color>
+    <color name="agri">#228B22</color>
+    <color name="colorPrimaryDark">#091859</color>
+    <color name="colorToolbarBg">#F0F6FC</color>
+    <color name="agrii">#2BAB64</color>
+    <color name="layoutbackground">#F5F6F7</color>
+    <color name="upcomingbackground">#E1DDDD</color>
+    <color name="offlinetext">#A9B0CC</color>
+    <color name="colorViewSubmission">#192D8A</color>
+    <color name="paisheder">#E2E2E2</color>
+    <color name="heder_lay">#F1F9F9</color>
+    <!-- text color -->
+    <color name="textColor1">#101F62</color>
+    <color name="textColor2">#57709C</color>
+    <color name="textColor3">#212121</color>
+    <color name="textColor5">#58719A</color>
+    <color name="textColor6">#393939</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#C5C9C8</color>
+    <color name="dot_dark_screen2">#C5C9C8</color>
+    <color name="dot_dark_screen3">#C5C9C8</color>
+    <color name="dot_dark_screen4">#C5C9C8</color>
+    <color name="dot_dark_screen5">#C5C9C8</color>
+    <color name="dot_dark_screen6">#C5C9C8</color>
+    <color name="submitc">#25D950</color>
+    <color name="submitcolor">#5272CC</color>
+    <!--    <color name="line">#13343E</color>-->
+    <!--    <color name="lback">#0e0e0f</color>-->
+    <!--    <color name="toptrade">#0b0b0b</color>-->
+    <color name="pvalue">#121212</color>
+    <!--    <color name="percentvalue">#010101</color>-->
+    <!--    <color name="percenvalue">#141414</color>-->
+    <color name="text">#7a7a7a</color>
+    <!--    <color name="topbg">#011319</color>-->
+    <!--    <color name="secondbg">#010E13</color>-->
+    <!--    <color name="textvalue">#081E26</color>-->
+    <!--    <color name="percent">#102F3A</color>-->
+    <!--    <color name="percenttext">#587D88</color>-->
+    <!--    <color name="textvaluecolor">#7E9FAB</color>-->
+    <color name="marketbackground">#03232D</color>
+    <!--    <color name="txtcolor">#5A6C72</color>-->
+    <color name="buy">#12563F</color>
+    <!--    <color name="cht">#eeb350</color>-->
+    <!--    <color name="sell">#8D3C40</color>-->
+    <color name="toptext">#6E6E6E</color>
+    <!--    <color name="homepair">#485D64</color>-->
+    <!--    <color name="clow">#4D7380</color>-->
+    <!--    <color name="mvolume">#D5F1CC</color>-->
+    <!--    <color name="mpaiback_neagtive">#EE5252</color>-->
+    <!--    <color name="mpaibacktextnegative">#870505</color>-->
+    <!--    <color name="mpaibacktextpositive">#104001</color>-->
+    <!--    <color name="cdepth">#8CA5AC</color>-->
+    <color name="disys_blue">#002F65</color>
+    <!--    <color name="search_background">#BFCEDE</color>-->
+    <color name="splashblue">#101F62</color>
+    <color name="splashgrey">#dcdcdc</color>
+
+    <!-- dots active colors -->
+    <!--    <color name="dot_light_screen1">#2BAB64</color>-->
+    <color name="dot_light_screen2">#2CAB66</color>
+    <color name="dot_light_screen3">#2CAB66</color>
+    <color name="dot_light_screen4">#2CAB66</color>
+    <color name="dot_light_screen5">#2CAB66</color>
+    <color name="dot_light_screen6">#2CAB66</color>
+    <array name="array_dot_active">
+        <item>@color/pvalue</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+        <item>@color/dot_light_screen6</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+        <item>@color/dot_dark_screen6</item>
+    </array>
+    <color name="halfwhite">#fdfafa</color>
+
+
+    <color name="dark_green">#1a936f</color>
+    <!--    <color name="darkgreen">#006400</color>-->
+
+    <color name="blackt">#969799</color>
+    <color name="dark_blue">#0f2464</color>
+    <color name="dark_gray">#4C535B</color>
+    <color name="copyright">#919191</color>
+    <color name="light_white">#F2F3F4</color>
+    <!--    <color name="lightgreen">#E0F2F1</color>-->
+    <!--    <color name="google_plus">#d34836</color>-->
+    <color name="light_grey">#d3d3d3</color>
+    <color name="liveborder">#9EBDE4</color>
+    <!--    <color name="login_text">#9F9999</color>-->
+    <!--    <color name="page_background">#dddee3</color>-->
+    <!--    <color name="black_semi_transparent">#B2000000</color>-->
+    <color name="background">#e5e5e5</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <!--    <color name="black_transparent">#80000000</color>-->
+    <!--    <color name="blue2">#2cdfee</color>-->
+    <!--    <color name="light_red">#f25353</color>-->
+    <!--    <color name="light_green">#07bf9f</color>-->
+    <!--    <color name="voilet">#e3defc</color>-->
+    <color name="voiletcolor">#6a56c9</color>
+    <color name="labelcolor">#212121</color>
+    <!--    <color name="filter_label_normal">#8A8889</color>-->
+    <!--    <color name="filter_label_selected">#221F20</color>-->
+
+    <!--    <color name="translucent_scrim_top">#26000000</color>-->
+    <!--    <color name="translucent_scrim_top_center">#0C000000</color>-->
+    <!--    <color name="translucent_scrim_bottom">#2A000000</color>-->
+    <!--    <color name="translucent_scrim_bottom_center">#0D000000</color>-->
+    <!--    <color name="purewhite">#ffffff</color>-->
+    <!--    <color name="button_notpressed">#021F27</color>-->
+    <!--    <color name="mild_orange">#ff9966</color>-->
+    <color name="lightcoral">#F08080</color>
+    <!--    <color name="gold">#FFD700</color>-->
+    <!--    <color name="darkred">#FF0000</color>-->
+    <!--    <color name="lightGreen">#8FBC8F</color>-->
+    <!--    <color name="text_title">#dcddde</color>-->
+    <!--    <color name="text_attempts">#bfc0c1</color>-->
+    <!--    <color name="star1">#f25353</color>-->
+    <!--    <color name="star2">#f27549</color>-->
+    <!--    <color name="star3">#ffbc5a</color>-->
+    <!--    <color name="star4">#2ECC71</color>-->
+    <color name="star5">#1A936F</color>
+    <!--    <color name="text_numberpressed">#fff</color>-->
+    <!--    <color name="dot_emptyborder">#87898C</color>-->
+    <color name="transparent">#00000000</color>
+    <!--    <color name="errorcolor">#FF0000</color>-->
+    <!--    <color name="backgroundcolor">#2C3E50</color>-->
+    <!--    <color name="bordercolor">#CFCFCF</color>-->
+    <color name="backgroundcolor1">#e9e9e9</color>
+    <color name="green_color">#1a936f</color>
+
+
+    <!--    <color name="bluecolor">#2A4FC3</color>-->
+    <!--    <color name="dashboard_color">#9d9d9d</color>-->
+    <!--    <color name="backgroundcolor_dash">#CFCFCF</color>-->
+    <!--    <color name="cardview_background">#E9E9E9</color>-->
+    <!--    <color name="red_mandatory">#FF0000</color>-->
+    <!--    <color name="calendercolor">#999999</color>-->
+
+
+    <!--    <color name="notificationColor">#D8D8D8</color>-->
+
+    <!--Tilescolor-->
+    <!--    <color name="cropdamage">#e5233e</color>-->
+    <!--    <color name="cropcoverage">#62B446</color>-->
+    <!--    <color name="rainfall">#A105C2</color>-->
+    <color name="instructions">#1794d6</color>
+    <!--    <color name="training">#f16831</color>-->
+
+    <!--    <color name="weatheradvisory">#E71368</color>-->
+    <color name="cropadvisory">#228BA6</color>
+    <!--    <color name="dbt_Agri">#FA2079</color>-->
+    <!--    <color name="pest">#fcc415</color>-->
+    <!--    <color name="programme">#064973</color>-->
+    <color name="marketing">#E20C92</color>
+    <!--    <color name="prices">#a31c44</color>-->
+    <!--    <color name="message">#CA9B2F</color>-->
+    <!--    <color name="darkwhite">#E9E9E9</color>-->
+    <!--    <color name="cropcutting">#D2691E</color>-->
+    <!--    <color name="croptarget">#FF3679</color>-->
+    <color name="croptargetdark">#BC8454</color>
+    <color name="croptargetlight">#EEA86B</color>
+
+
+    <!--Reason dialog color codes-->
+    <color name="green_bg">#4EAA59</color>
+    <color name="green_dialog">#16B715</color>
+    <!--    <color name="yellow_orange">#E9A419</color>-->
+    <color name="orange_bg">#F7BA6A</color>
+    <color name="blue_bg">#17ACE8</color>
+    <color name="item_color">#F7F5F5</color>
+    <color name="check_box_border">#707070</color>
+    <!--    <color name="edit_color">#E907E1</color>-->
+    <color name="textColor">#999494</color>
+    <color name="targetValues">#AEACAC</color>
+    <color name="bordercolors">#D9E4EF</color>
+    <!--    <color name="blue_add">#097EF3</color>-->
+    <color name="edit_boarder">#E0E0E0</color>
+
+
+    //Cropcoverage BAO assets
+    <color name="panchayathnamecolor">#101F62</color>
+    <!--    <color name="textcolorlightgrey">#999494</color>-->
+    <color name="submittednamecoloe">#12A0D4</color>
+    <color name="statuswaiting">#7B7979</color>
+    <color name="statusapproved">#16B715</color>
+    <color name="statusnotapplicable">#12A0D4</color>
+
+    <color name="buttonedit">#AE1438</color>
+    <color name="buttonadd">#097EF3</color>
+    <color name="buttonsave">#16B715</color>
+    <!--DAO Color Code-->
+    <color name="dao_edit_text_view_color">#AE1438</color>
+    <color name="dao_add_text_view_color">#097EF3</color>
+    <color name="dao_submittedby_text_view_color">#12A0D4</color>
+    <color name="dao_submittedby_text_view_key_color">#999494</color>
+    <color name="dao_save_text_view_color">#16B715</color>
+    <color name="dao_not_submitted_text_view_color">#7B7979</color>
+    <color name="dao_edit_textview_color">#FD7579</color>
+
+
+    <color name="lavender_light">#e3defc</color>
+    <color name="regsiteredback">#F5F6F7</color>
+    <color name="lavender_font">#9400D3</color>
+    <color name="damage_reason_status_bg">#EDF5FD</color>
+    <color name="user_group_bg">#35C8C9</color>
+    <color name="info_color_bg">#C6F2F1</color>
+
+
+    <!--Reward Text color-->
+    <color name="block_district_txt">#414D5B</color>
+    <color name="points_color"> #20A56B</color>
+    <color name="circular_img_clr">#C9C3FF</color>
+    <color name="rewardsclr">#20A56B</color>
+    <!--    <color name="rewardsdark">#187C51</color>-->
+    <!--    <color name="golden_yellow">#FFA200</color>-->
+    <color name="profile_color_bg">#F0F6FC</color>
+    <color name="menu_text">#939393</color>
+
+
+    <!--New Design color code use in home screen -->
+    <color name="name_background">#203485</color>
+    <color name="welcome_text_color">#BFD9FA</color>
+    <color name="crop_coverage">#28B081</color>
+    <color name="crop_coverage_dark">#1B966B</color>
+    <color name="crop_damage">#E88181</color>
+    <color name="crop_damage_dark">#B55353</color>
+    <color name="seed_performance">#74AEE8</color>
+    <color name="seed_performance_dark">#487FB5</color>
+    <color name="horticulture">#67AC5D</color>
+    <color name="horticulture_dark">#548B4B</color>
+    <color name="horticulture_produce">#F2739C</color>
+    <color name="horticulture_produce_dark">#C7557B</color>
+    <color name="pais_dark">#805BC2</color>
+    <color name="pais">#6947A6</color>
+    <color name="pais_daily">#1462c7</color>
+    <color name="pais_local">#6a2cd4</color>
+    <color name="create_submit">#58719A</color>
+    <color name="useful_resource_background">#F7FBFF</color>
+    <color name="crop_target">#FECC4B</color>
+    <color name="back_btncolor">#D6D6D6</color>
+    <color name="proceed_btncolor">#4897E0</color>
+    <color name="bottom_textback">#707070</color>
+    <color name="middle_grey">#707070</color>
+    <!--    <color name="outline">#0000000D</color>-->
+    <color name="tabtextcolor">#b3b3b3</color>
+    <color name="labelrecyclerview">#212121</color>
+    <color name="labelrecyclerviewc">#336FA2</color>
+    <color name="viewsubmissioncolor">#BFD9FA</color>
+    <color name="viewsubmissionbgcolor">#1E2C6B</color>
+    <color name="panchayatbackground">#203485</color>
+    <color name="recolor">#FAFBFC</color>
+    <color name="sky_blue">#1689FC</color>
+    <color name="arrivals">#7488eb</color>
+    <color name="arrivals_below">#4556b4</color>
+    <color name="nil">#1cace8</color>
+    <color name="nil_below">#487fb5</color>
+    <color name="edit_price">#5b96c2</color>
+    <color name="edit_price_below">#376690</color>
+    <color name="viewsubmission">#805bc2</color>
+    <color name="viewsubmission_below">#6947a6</color>
+    <color name="market_list">#CBCBCB</color>
+
+
+
+    <color name="login_btn_color">#F48D2B</color>
+    <color name="seed_color">#D9E4F0</color>
+    <!--    <color name="login_bg_color">#47795E</color>-->
+    <color name="schemelabel">#AFAFAF</color>
+    <color name="changepassowrd">#1F274A</color>
+    <color name="changepassowrdcolor">#4897E0</color>
+    <color name="changepassowrdlabel">#D9E4EF</color>
+    <color name="changepassowrdlabelborder">#F7F8FA</color>
+    <color name="softgrey">#DFE3E8</color>
+    <color name="tabgrey">#EBE9EB</color>
+    <color name="paisgrey">#8B8B8B</color>
+    <!--    <color name="formulation_edit_background">#172A75</color>-->
+    <color name="pesticide_bg_color">#BFCEDE</color>
+    <color name="month_bg">#6098CC</color>
+    <color name="outdoor_bar">#6098CC</color>
+    <color name="expandableItem_background">#E4F2ED</color>
+    <color name="submit_blue">#BED8FB</color>
+    <color name="molecule_bg">#EDFCF7</color>
+    <color name="pest_surveillance_bg">#FCEDED</color>
+    <color name="add_crop_bg">#D6F1E7</color>
+    <!--    <color name="pest_license_bg">#FFF7E4</color>-->
+    <color name="reward_main_screen_green">#136C44</color>
+    <color name="target_error_highlight">#f05656</color>
+    <color name="rainfall_dark">#AB0CCC</color>
+    <color name="rainfall_light">#BC58D2</color>
+    <color name="user_mertric_dark">#AF8C2B</color>
+    <color name="user_mertric_light">#CEA738</color>
+    <color name="gamification_light">#8B7EF0</color>
+    <color name="gamification_dark">#6E67A8</color>
+    <color name="underline_gray">#BDBDBD</color>
+    <color name="target_solid">#FFF9E3</color>
+    <color name="border_target">#E0D7AF</color>
+    <color name="outdoor_neutral">#FAFAFA</color>
+    <!--    <color name="edit_value">#FFF9E3</color>-->
+    <color name="blue_value">#F0F6FC</color>
+    <color name="blue_bar">#1CACE8</color>
+    <color name="crop_ip_light">#8F8149</color>
+    <color name="crop_ip_dark">#5F552D</color>
+    <color name="farmer_reg_light">#375B73</color>
+    <color name="farmer_reg_dark">#284253</color>
+    <color name="partially_approved">#FFB677</color>
+
+    <!--Horticulture-->
+    <color name="addcropbackground">#6098CC</color>
+    <color name="textlabel_horti">#1C85E8</color>
+    <color name="save_horti">#4897E0</color>
+    <color name="text_cancel">#969799</color>
+    <color name="label_border">#1C85E8</color>
+    <color name="add_new_cold_storage">#E4F2ED</color>
+
+    <color name="vsubmission_top">#57709C</color>
+    <color name="yellowtext">#FED064</color>
+    <color name="darkGrey">#6F7070</color>
+    <color name="lightGrey">#C4C4C4</color>
+    <color name="light_bg">#FAFCFD</color>
+
+    <color name="pacnhyat_bg_color">#EEEEEE</color>
+    <color name="facility_details_bg">#FAFCFD</color>
+    <color name="phms_dark">#C99858</color>
+    <color name="phms">#E6AC60</color>
+
+    <color name="acview">#F0E9E9</color>
+
+    <color name="submitted_txt_color">#4CB688</color>
+    <color name="radio_button_unselect">#4FA270</color>
+    <color name="radio_button_select">#20A56B</color>
+
+
+
+    <color name="head_grey">#B5B5B5</color>
+
+    <color name="creative_idea_note_background">#F2E7AE</color>
+    <color name="creative_idea_note_color">#313131</color>
+    <color name="weekly_quiz_note_color">#CBCDD1</color>
+    <color name="view_ideas_color">#FDFDFD</color>
+
+    <color name="crop_cover_color">#5EC29A</color>
+    <color name="crop_target_color">#F1B48B</color>
+    <color name="crop_damage_color">#ED989A</color>
+    <color name="horticulture_produce_color">#F7ABC3</color>
+    <color name="phms_color">#E3BF83</color>
+    <color name="coldstorage_color">#7BADF2</color>
+    <color name="performance_dark">#9F711A</color>
+    <color name="performance_light">#E2A127</color>
+    <color name="bavas">#5CA82C</color>
+    <color name="farm_machinery">#7488E9</color>
+    <color name="farm_machinery_dark">#4759B3</color>
+    <color name="structure">#5B95C2</color>
+    <color name="structure_dark">#35688F</color>
+    <color name="bavas_dark">#2F5A14</color>
+    <color name="total_green">#B9E6D6</color>
+    <color name="grand_total_red">#F0B6B6</color>
+    <color name="light_grey_color">#343434</color>
+
+    <color name="add_node">#FFE9CC</color>
+    <color name="add_struct">#CDFAFC</color>
+    <color name="add_price_crop">#F6FFE6</color>
+    <color name="add_node_bg">#CBE5FF</color>
+    <color name="add_struct_bg">#FFF6DB</color>
+    <color name="view_exist_crop">#28777B</color>
+    <color name="view_exist_struct">#4383EA</color>
+
+    <color name="crop_selected_color">#D7E7F7</color>
+    <color name="price_intelligence">#D6EDFF</color>
+    <color name="farmer_produce_organization">#F6FFE6</color>
+    <color name="contract_farming">#FFF6DB</color>
+    <color name="marking_infrastructure">#CDFAFC</color>
+    <color name="node_hint_color">#C6D4E2</color>
+    <color name="fpo_edit_color">#F29B4C</color>
+    <color name="crop_residue_head">#33F29B4C</color>
+    <color name="reject">#E7685B</color>
+    <color name="preview_divider">#E6E6E6</color>
+    <color name="bavas_review_light">#f48a64</color>
+    <color name="bavas_review_dark">#de744d</color>
+
+
+    <color name="crop_input_color">#A88562</color>
+    <color name="farmer_registration_color">#375B73</color>
+    <color name="user_metrics_color">#55B5B2</color>
+
+    <color name="hortiproduce_color">#EF7C7F</color>
+    <color name="dbt_dark">#BA5254</color>
+    <color name="dbt_light">#F7F7F7</color>
+    <color name="horti_crop_tar">#E6B00E</color>
+    <color name="horti_crop_cov">#4FA276</color>
+    <color name="edit_background">#FFFCF1</color>
+    <color name="exist_qtytxt">#718298</color>
+    <color name="machinery_blue">#F4FAFF</color>
+    <color name="structure_menu_blue">#E8F2FA</color>
+    <color name="pest_licence_bg">#EAAF63</color>
+    <color name="commends_head">#C9E1F8</color>
+
+    <color name="agri_dark">#536B7B</color>
+    <color name="agri_light">#2F3E48</color>
+
+    <color name="annual_dark">#985F5F</color>
+    <color name="annual_light">#6C4040</color>
+
+    <color name="bameti_dark">#CC995D</color>
+    <color name="bameti_light">#8D704E</color>
+
+    <color name="bavas_dark_2">#746A8D</color>
+    <color name="bavas_light">#413B50</color>
+
+    <color name="farm_dark">#3EBCC1</color>
+    <color name="farm_light">#1F6B6E</color>
+    <color name="ok_btn_color">#fc1f8d</color>
+    <color name="pmksy_dark">#417B41</color>
+    <color name="pmksy_light">#76AD76</color>
+
+    <color name="cold_view_title">#2B3253</color>
+
+    <color name="green_light">#8FDDC1</color>
+    <color name="red_light">#F5BDBD</color>
+
+
+    <color name="residue_dark">#B57A2C</color>
+    <color name="residue_light">#C98C3B</color>
+
+    <color name="pest_dark">#5E71A2</color>
+    <color name="pest_light">#87A0E0</color>
+    <color name="agriculture_dark">#6F4124</color>
+    <color name="agriculture_light">#C17240</color>
+
+    <color name="submitted_agri_target">#40773D</color>
+    <color name="submitted_agri_target_light">#57A753</color>
+
+    <color name="submitted_horti_target">#094507</color>
+    <color name="submitted_horti_target_light">#2C672A</color>
+
+    <color name="bassoca_Dark">#533916</color>
+    <color name="bassoca_light">#C18638</color>
+
+    <color name="crop_residue_Dark">#A54229</color>
+    <color name="crop_residue_light">#F56E4D</color>
+    <color name="seed_Sale_input"> #1BB598</color>
+    <color name="horti_Seed_perf"> #6581CC</color>
+    <color name="left_days_color">#DB6A56</color>
+
+    <color name="add_new_variety_bg">#497eb4</color>
+
+    <color name="p_header">#F0F0F0</color>
+    <color name="unt_back">#BBBBBB</color>
+    <color name="market_cell">#FFFCDF</color>
+
+    <color name="govt_farm_Dark">#288BB0</color>
+    <color name="govt_farm_light">#1D7291</color>
+
+    <color name="soil_card_Dark">#AF8B62</color>
+    <color name="soil_card_light">#8E6C45</color>
+    <color name="red_mandatory">#FF0000</color>
+    <color name="edit_anamolous_grey">#858585</color>
+    <color name="edit_anamolous_gre">#858585</color>
+    <color name="primary">#ff212121</color>
+    <color name="primary_dark">#ff000000</color>
+    <color name="accent">#ff80cbc4</color>
+</resources>
